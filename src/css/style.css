@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100..900&display=swap');
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 80%;
+}
+
+.header .logo {
+    margin-right: 40px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .nav-list {
+    display: flex;
+}
+
+.nav-list .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.nav-link p,
+.nav-link a {
+    color: hsl(0, 0%, 41%);
+}
+
+.nav-link p {
+    margin-right: 10px;
+}
+
+.nav-link img {
+    height: 10px;
+}
+
+.nav-link .toggle{
+    position: absolute;
+    top: 15%;
+    padding: 20px 30px;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 0 0 20px 5px hsl(0, 0%, 80%);
+    border-radius: 10px;
+    cursor: auto;
+}
+
+.toggle li{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.toggle li img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.nav-link .toggle.features{
+    left: 13%;
+}
+
+.nav-link .toggle.company{
+    left: 24%;
+}
+
+.nav-list.login .nav-link:last-child a {
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.header .mobile-menu {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+}
+
+.section .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 300px;
+}
+
+.info .title {
+    font-size: 80px;
+    width: 540px;
+    margin-bottom: 50px;
+    color: hsl(0, 0%, 8%);
+}
+
+.info .description {
+    color: hsl(0, 0%, 41%);
+    line-height: 28px;
+    width: 450px;
+    margin-bottom: 50px;
+}
+
+.info .button {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+.info .brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.section .image-hero {
+    height: 600px;
+}
