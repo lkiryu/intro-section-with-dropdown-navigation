@@ -3,6 +3,7 @@
 body {
     font-family: "Epilogue", sans-serif;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .container {
@@ -12,6 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 98%);
+    overflow: hidden;
 }
 
 .header {
@@ -48,6 +50,12 @@ nav .nav-list {
 .nav-link p,
 .nav-link a {
     color: hsl(0, 0%, 41%);
+    transition: 0.3s ease-in;
+}
+
+.nav-link p:hover,
+.nav-link a:hover {
+    color: hsl(0, 0%, 8%);
 }
 
 .nav-link p {
@@ -93,6 +101,10 @@ nav .nav-list {
     padding: 10px 20px;
 }
 
+.nav-list.login .nav-link:last-child a:hover {
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
 .header .mobile-menu {
     display: none;
 }
@@ -132,10 +144,17 @@ nav .nav-list {
 
 .info .button {
     background-color: hsl(0, 0%, 8%);
+    border: 2px solid hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
     padding: 20px 30px;
     border-radius: 20px;
     margin-bottom: 60px;
+    transition: 0.3s ease-in;
+}
+
+.info .button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
 }
 
 .info .brands {
