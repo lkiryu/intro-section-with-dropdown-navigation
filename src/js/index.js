@@ -1,6 +1,7 @@
 const mobileMenu = document.querySelector('.mobile-menu')
 const navList = document.querySelector('nav')
 const navLinks = document.querySelectorAll('.nav-link')
+const toggleMenu = document.querySelectorAll('.toggle-menu')
 
 function animateLinks() {
     navLinks.forEach((links, index) => {
@@ -15,3 +16,9 @@ mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('active')
     animateLinks()
 })
+
+toggleMenu.forEach((toggle) => {
+    toggle.addEventListener('click', ()=>{
+        toggle.lastElementChild.classList.toggle('none')
+    })
+});
