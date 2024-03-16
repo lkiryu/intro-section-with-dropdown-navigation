@@ -18,7 +18,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 20vh;
     width: 80%;
@@ -105,8 +105,18 @@ nav .nav-list {
     border: 2px solid hsl(0, 0%, 8%);
 }
 
-.header .mobile-menu {
+.mobile-menu {
     display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: hsl(0, 0%, 0%);
+    margin: 8px;
+    transition: 0.3s;
 }
 
 .none {
