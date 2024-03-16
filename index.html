@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,92 @@
     <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
     <title>Intro section with dropdown navigation</title>
 </head>
+
 <body>
-    
+    <main class="container">
+        <header class="header">
+            <a href="/" class="logo">
+                <img src="./src/images/logo.svg" alt="logo">
+            </a>
+
+            <nav>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-link">
+                        <p>Features</p>
+                        <img src="./src/images/icon-arrow-down.svg" alt="icon-arrow-down">
+                        <ul>
+                            <li>
+                                <img src="./src/images/icon-todo.svg" alt="icon-todo">
+                                <a href="#">Todo List</a>
+                            </li>
+                            <li>
+                                <img src="./src/images/icon-calendar.svg" alt="icon-calendar">
+                                <a href="#">Calendar</a>
+                            </li>
+                            <li>
+                                <img src="./src/images/icon-reminders.svg" alt="icon-reminders">
+                                <a href="#">Reminders</a>
+                            </li>
+                            <li>
+                                <img src="./src/images/icon-planning.svg" alt="icon-planning">
+                                <a href="#">Planning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <p>Company</p>
+                        <img src="./src/images/icon-arrow-down.svg" alt="icon-arrow-down">
+                        <ul>
+                            <li>
+                                <a href="#">History</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Careers</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+                <ul class="nav-list login">
+                    <li class="nav-link">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section">
+            <div class="info">
+                <h2 class="title"></h2>
+                <p class="descrition"></p>
+                <a href="" class="button"></a>
+                <ul class="brands">
+                    <li><img src="./src/images/client-databiz.svg" alt="client-databiz"></li>
+                    <li><img src="./src/images/client-audiophile.svg" alt="client-audiophile"></li>
+                    <li><img src="./src/images/client-meet.svg" alt="client-meet"></li>
+                    <li><img src="./src/images/client-maker.svg" alt="client-maker"></li>
+                </ul>
+            </div>
+            <img src="./src/images/image-hero-desktop.png" alt="image-hero-desktop">
+        </section>
+    </main>
     <script src="./src/js/index.js"></script>
 </body>
+
 </html>
